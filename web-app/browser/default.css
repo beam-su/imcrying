@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(98, 98, 98);
+}
+
+h2, h3{
+    color: whitesmoke;
+}
+
+#box {
+    text-align: center;
+}
+
+#field table {
+    border-collapse: collapse;
+    font-size: 150%;
+    font-family: san-serif;
+    font-weight: bold;
+    display: inline-block;
+    opacity: 50%;
+}
+
+#field table td {
+    background-color: rgb(195, 195, 195);
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    border: 1px solid black;    
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color:black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*Popup window*/
+  .popup{
+    background-color: rgba(24, 24, 24, 0.9);
+    width: 420px;
+    padding: 100px 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    z-index: 1;
+}
+.popup button{
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #0f72e5;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup button:hover{
+  opacity: 0.5;
+}
+
+.popup h2{
+  margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    color: white;
+}
+.popup img{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* :root{
+    --grid-columns: 8;
+    --grid-rows: 8;
+    --grid-aspect: var(--grid-columns) / var(--grid-rows);
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.grid
+{
+    aspect-ratio: var(--grid-aspect);
+    background: var(--grid-background);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.row
+{
+    height: calc(100% / var(--grid-rows));
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.cell
+{
+    background-size: cover;
+    background-color: rgb(32, 32, 32);
+    opacity: 0.2;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: calc(100% / var(--grid-columns));
+    z-index: -1;
+    border-style: double;
+} */

@@ -1,0 +1,56 @@
+<!-- In HTML Comments are written like this -->
+<!-- They can all be removed for your apps -->
+<!doctype html> <!-- This first line tells browsers to expect modern standard html 5 -->
+<html lang="en-gb"> <!-- This is indicates the page is written in British English, useful for accessibility -->
+<meta charset="utf-8"> <!-- This indicates how the file is encoded. utf-8 is standard -->
+<title>Beam's Galactic Minesweeper</title> <!-- All pages need a title, this will be displayed in the browser's title bar -->
+<link rel="stylesheet" href="default.css"> <!-- Import style sheet – default.css -->
+<link rel="icon" href="./assets/favicon.png"> <!-- Import 'Favorites Icon' – favicon.png -->
+<script src="main.mjs"></script>
+
+<!-- Setting up the background -->
+<style>
+  body{
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -50;
+  }
+</style>
+
+<!-- Popup window to start the game-->
+<style media = "popup">
+  *,
+    *:before,
+    *:after{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        position: absolute;
+    }
+</style>
+
+<body>
+  <div class = "popup">
+      <h2>Welcome Commander!</h2>
+      <img src="../assets/pewpew.gif" alt="spaceship gif">
+      <p>Your mission today is to safely navigate our ship through an unmapped sector with aliens waiting to ambush us. As our ship holds fragile humanitarian aid, we cannot afford to make any mistakes. Find where the aliens are hiding using our sensor probe and navigate us through safely.</p>
+      <button id = "close">Goodluck</button>
+  </div>
+  <script type = "text/javascript" src="popup.js"></script>
+</body>
+
+<!-- Starting the Game-->
+<body>
+    <div id="box">
+       <h2>Galactic Minesweeper</h2><hr><br><br>
+          <div id="field"></div>
+          <br>
+        <div id="lost" style="display: none;">
+          <h3>Game Over</h3>
+          <button id="new-game-button" type="button" onclick="reload()">Restart</button>
+        </div>         
+    </div>
+</body>
+
